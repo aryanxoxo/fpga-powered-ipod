@@ -1,0 +1,61 @@
+module controller_TESTBENCH; 
+
+reg clk; 
+reg [7:0] key; 
+reg calc_finished; 
+wire [4:0] number_one, number_two; 
+wire [3:0] operation; 
+wire done_operation,done_number_one,done_number_two,done_equal_reg; 
+KEYBOARD keyboard(.clk(clk),  .sound_done(1'b1), .calc_finished(calc_finished), .key(key), .number_one(number_one), .number_two(number_two),
+.operation(operation), .done_number_one(done_number_one), .done_operation(done_operation), .done_number_two(done_number_two), .done_equal_reg(done_equal_reg));
+initial begin 
+clk = 0 ;  key = 8'h2a; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2a; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2a; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2a; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2a; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2a; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2a; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2a; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h31; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h31; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h31; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h31; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2b; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2b; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2b; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2b; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2b; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2b; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2b; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2b; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h2b; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h2b; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h31; calc_finished = 1'b0;  #100;
+clk = 0 ;  key = 8'h31; calc_finished = 1'b0;  #100; 
+clk = 1 ;  key = 8'h31; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h31; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h53; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h53; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h3d; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h3d; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h3d; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h3d; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h3d; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h3d; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h3d; calc_finished = 1'b1;  #100;
+clk = 0 ;  key = 8'h3d; calc_finished = 1'b1;  #100; 
+clk = 1 ;  key = 8'h3d; calc_finished = 1'b1;  #100;
+end 
+endmodule
