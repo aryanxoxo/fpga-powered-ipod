@@ -1,4 +1,6 @@
-# FPGA-Powered iPod
+﻿# FPGA-Powered iPod
+
+> Public archive note: this repository is a portfolio/demo-safe version prepared from private working repositories/materials; sensitive details, credentials, raw logs, and proprietary context are intentionally omitted.
 
 Source archive for an FPGA audio-player project built around the DE1-SoC platform. The design combines keyboard control, LCD/scope display logic, flash/audio controller IP, PicoBlaze support files, and a top-level Verilog integration for a small hardware music player.
 
