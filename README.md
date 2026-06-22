@@ -1,12 +1,12 @@
 # FPGA-Powered iPod
 
-Clean public archive for an FPGA audio-player project built around the DE1-SoC platform. The design combines keyboard control, LCD/scope display logic, flash/audio controller IP, PicoBlaze support files, and a top-level Verilog integration that behaves like a small hardware music player.
+Source archive for an FPGA audio-player project built around the DE1-SoC platform. The design combines keyboard control, LCD/scope display logic, flash/audio controller IP, PicoBlaze support files, and a top-level Verilog integration for a small hardware music player.
 
 ## What is included
 
 - `rtl/` - top-level Verilog, keyboard/LCD/display modules, PicoBlaze assembly/memory files, Quartus project files, timing constraints, and packaged IP descriptors.
 - `sim/` - ModelSim-oriented testbenches for controller, counter, FSM/memory, and top-level simulation checks.
-- `docs/` - original project documentation and design figures preserved as evidence.
+- `docs/` - project documentation and design figures.
 
 ## Hardware and tools
 
@@ -23,5 +23,4 @@ Clean public archive for an FPGA audio-player project built around the DE1-SoC p
 4. Compile the top-level `simple_ipod_solution`.
 5. Run selected simulations from `sim/` before programming hardware.
 
-This repository is intentionally source-focused. Generated build folders, reports, bitstreams, and temporary simulator files are excluded so the project stays reviewable.
-
+This repository is source-focused: HDL, project files, simulation assets, documentation, and test evidence are included; build folders, reports, bitstreams, and simulator caches are excluded.
